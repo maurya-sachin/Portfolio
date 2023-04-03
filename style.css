@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Fredericka+the+Great&family=Orbitron&display=swap');
+
+*{
+    margin: 10px;
+    padding: 0;
+}
+body{
+    background-color: #1d1d1d;
+    font-family: 'Dosis', sans-serif;
+}
+
+.heading{
+    color: rgb(253,33,85);
+    width: 12vw;
+    font-family: 'Orbitron', sans-serif;
+    height: 100vh;
+
+}
+
+.heading nav {
+    padding: 40px 10px;
+}
+
+.heading nav li{
+    list-style: none;
+    font-size: 15px;
+    padding: 5px 0px;
+}
+
+h1{
+    font-family: 'Fredericka the Great', cursive;
+    color: rgb(255,255,255)
+}
+
+.intro{
+    color: rgb(255,255,255);
+    width: 88vw;
+}
+
+p{
+    text-align: ;
+}
+.portfolio{
+    display: flex;
+}
+
