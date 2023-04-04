@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Fredericka+the+Great&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Fredericka+the+Great&family=Orbitron&family=Source+Code+Pro&display=swap');
 
 * {
     margin: 0px;
@@ -16,7 +16,7 @@ body {
 }
 
 .navigate {
-    background-color:blueviolet;
+    background-color: blueviolet;
     display: flex;
     justify-content: space-between;
     height: 85px;
@@ -66,69 +66,37 @@ body {
     color: #6b6b6b;
 }
 
-.intro {
-    height: 87vh;
-}
-
-.introcontainer {
+.contactform {
     color: rgb(255, 255, 255);
-    height: 45vh;
-    width: 65vw;
-    margin: 141px auto;
-    display: flex;
-    justify-content: space-around;
+    padding: 100px;
 }
 
-.myintro {
+.contactform h1 {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}
+
+.contactform form .form-group {
+    padding: 9px 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
-.hey {
-    font-size: 28px;
+.contactform form .form-group input {
+    padding: 5px;
+    border-radius: 8px;
+    width: 400px;
+    margin: 4px 0px;
 }
 
-.name {
-    font-family: 'Fredericka the Great', cursive;
-    font-size: 52px;
-    color: rgb(255, 255, 255)
-}
-
-.about {
-    font-size: 22px;
-}
-
-.aboutme {
-    margin-top: 20px;
-    font-size: 16px;
-}
-
-button {
-    margin: 30px 12px 0 0;
-}
-
-.buttons button a {
-    text-decoration: none;
-    color: #1d1d1d;
-}
-
-.buttons button {
-    padding: 12px;
-    border-radius: 25px;
-    font-size: 14px;
-    font-weight: 600;
-    background-color: blueviolet;
-    color: #1d1d1d;
-    cursor: pointer;
+#emailmsg {
+    font-size: 9px;
+    color: darkgray;
+    padding: 0 12px;
 }
 
 
-.buttons button:hover {
-    background-color: darkgray;
-}
 
-.mypic img {
-    width: 350px;
-    height: 45vh;
+button{
+    
 }
