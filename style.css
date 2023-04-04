@@ -1,46 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Fredericka+the+Great&family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=IBM+Plex+Mono&family=Play&display=swap');
 
-*{
-    margin: 10px;
-    padding: 0;
+* {
+    margin: 0px;
+    padding: 0px;
 }
-body{
+
+body {
     background-color: #1d1d1d;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Play', sans-serif;
 }
 
-.heading{
-    color: rgb(253,33,85);
-    width: 12vw;
-    font-family: 'Orbitron', sans-serif;
+.heading {
+    color: blueviolet;
+    width: 13vw;
     height: 100vh;
-
+    font-family: 'IBM Plex Mono', monospace;
 }
 
 .heading nav {
-    padding: 40px 10px;
+    padding: 45px;
 }
 
-.heading nav li{
+.heading nav li {
     list-style: none;
-    font-size: 15px;
-    padding: 5px 0px;
+    font-size: 18px;
+    padding: 15px 0px;
 }
 
-h1{
-    font-family: 'Fredericka the Great', cursive;
-    color: rgb(255,255,255)
+.intro {
+    width: 87vw;
 }
 
-.intro{
-    color: rgb(255,255,255);
-    width: 88vw;
+.introcontainer {
+    color: rgb(255, 255, 255);
+    height: 45vh;
+    width: 60vw;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-around;
 }
 
-p{
-    text-align: ;
-}
-.portfolio{
+.portfolio {
     display: flex;
 }
 
+.myintro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hey{
+    font-size: 88px;
+}
+
+.name{
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 68px;
+    color: rgb(255,255,255)
+}
+
+.about{
+
+}
+
+.buttons button{
+}
+
+.mypic img{
+    width: 350px;
+    height: 45vh;
+}
