@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Play&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Fredericka+the+Great&family=Source+Code+Pro&display=swap');
 
 * {
     margin: 0px;
@@ -8,22 +7,25 @@
 
 body {
     background-color: #1d1d1d;
-    font-family: 'Play', sans-serif;
+    font-family: 'Source Code Pro', monospace;
 }
 
 .navigate {
-    background-color:darkgray;
+    background-color:lightseagreen;
     display: flex;
     justify-content:space-between;
-    font-family: 'Play', sans-serif;
-
+    height: 13vh;
 }
 
 .navigate #logo {
-    font-size: 56px;
-    font-weight: 600;
-    margin-left: 50px;
+    background-color:darkgrey;
+    font-size: 46px;
+    font-weight: 500;
+    margin: 12px 0 10px 60px;
     cursor: pointer;
+    font-family: 'Comforter Brush', cursive;
+    border-radius: 50px;
+    transform: rotate(-22deg);
 }
 
 .navigate #logo a{
@@ -34,9 +36,10 @@ body {
 .navigate ul {
     list-style: none;
     display: flex;
+    font-weight: 600;
     gap: 35px;
     font-size: 18px;
-    margin: 20px 40px 20px 20px;
+    margin: 30px 60px 30px 20px;
 }
 
 .navigate li a{
@@ -69,7 +72,7 @@ body {
 }
 
 .hey{
-    font-size: 68px;
+    font-size: 28px;
 }
 
 .name{
@@ -79,7 +82,7 @@ body {
 }
 
 .about{
-    font-size: 28px;
+    font-size: 22px;
 }
 
 .aboutme{
@@ -102,8 +105,7 @@ button{
 }
 
 .buttons button:hover{
-    background-color: rgb(255, 255, 255);
-    color: lightseagreen;
+    background-color:darkgray;
 }
 
 .mypic img{
