@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=IBM+Plex+Mono&family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Play&display=swap');
 
 * {
     margin: 0px;
@@ -11,14 +11,16 @@ body {
 }
 
 .heading {
-    color: blueviolet;
-    width: 13vw;
+    background-color:darkgray;
+    color:#1d1d1d;
+    width: 12vw;
     height: 100vh;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Play', sans-serif;
 }
 
 .heading nav {
     padding: 45px;
+    margin: 70px 0px;
 }
 
 .heading nav li {
@@ -28,14 +30,14 @@ body {
 }
 
 .intro {
-    width: 87vw;
+    width: 88vw;
 }
 
 .introcontainer {
     color: rgb(255, 255, 255);
     height: 45vh;
-    width: 60vw;
-    margin: 60px auto;
+    width: 65vw;
+    margin: 65px auto;
     display: flex;
     justify-content: space-around;
 }
@@ -51,20 +53,41 @@ body {
 }
 
 .hey{
-    font-size: 88px;
+    font-size: 68px;
 }
 
 .name{
     font-family: 'Fredericka the Great', cursive;
-    font-size: 68px;
+    font-size: 52px;
     color: rgb(255,255,255)
 }
 
 .about{
+    font-size: 28px;
+}
 
+.aboutme{
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+button{
+    margin: 30px 12px 0 0;
 }
 
 .buttons button{
+    padding: 12px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: lightseagreen;
+    color:#1d1d1d;
+    cursor:pointer;
+}
+
+.buttons button:hover{
+    background-color: rgb(255, 255, 255);
+    color: lightseagreen;
 }
 
 .mypic img{
