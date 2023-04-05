@@ -68,7 +68,7 @@ body {
 
 .contactform {
     color: rgb(255, 255, 255);
-    padding: 100px;
+    padding: 48px;
 }
 
 .contactform h1 {
@@ -76,10 +76,17 @@ body {
     text-align: center;
 }
 
+.contactform form {
+    margin: 10px 270px 25px 270px;
+    background-color: rgba(169, 169, 169, 0.2);
+    padding: 10px 320px 55px 280px;
+}
+
 .contactform form .form-group {
-    padding: 9px 0;
+    padding: 4px;
     display: flex;
     flex-direction: column;
+    margin: 5px 0px 0px 0px;
 }
 
 .contactform form .form-group input {
@@ -89,14 +96,30 @@ body {
     margin: 4px 0px;
 }
 
+
+.form-check {
+    margin: 5px 0 0 0;
+    padding: 4px 0;
+}
+
 #emailmsg {
     font-size: 9px;
     color: darkgray;
     padding: 0 12px;
 }
 
+button {
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: blueviolet;
+    color: #1d1d1d;
+    cursor: pointer;
+    margin: 2px 0 0 150px;
+}
 
 
-button{
-    
+button:hover {
+    background-color: darkgray;
 }
