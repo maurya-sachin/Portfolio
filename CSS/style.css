@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Fredericka+the+Great&family=Source+Code+Pro&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #1d1d1d;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigate {
+    background-color:blueviolet;
+    display: flex;
+    justify-content: space-between;
+    height: 85px;
+}
+
+.navigate #logo {
+    background-color: darkgrey;
+    font-size: 46px;
+    font-weight: 500;
+    margin: 12px 0 10px 60px;
+    cursor: pointer;
+    font-family: 'Comforter Brush', cursive;
+    border-radius: 50px;
+    transform: rotate(-16deg);
+}
+
+.navigate #logo a {
+    text-decoration: none;
+    color: #1d1d1d;
+}
+
+.navigate #logo:hover {
+    background-color: #6b6b6b;
+}
+
+.navigate ul {
+    list-style: none;
+    display: flex;
+    font-weight: 600;
+    gap: 35px;
+    font-size: 18px;
+    margin: 30px 60px 30px 20px;
+}
+
+.navigate li:hover {
+    background-color: darkgray;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+.navigate li a {
+    text-decoration: none;
+    color: #1d1d1d;
+}
+
+.navigate li a:hover {
+    color: #6b6b6b;
+}
+
+.intro {
+    height: 87vh;
+}
+
+.introcontainer {
+    color: rgb(255, 255, 255);
+    height: 45vh;
+    width: 65vw;
+    margin: 141px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.myintro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hey {
+    font-size: 28px;
+}
+
+.name {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 52px;
+    color: rgb(255, 255, 255)
+}
+
+.about {
+    font-size: 22px;
+}
+
+.aboutme {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+button {
+    margin: 30px 12px 0 0;
+}
+
+.buttons button a {
+    text-decoration: none;
+    color: #1d1d1d;
+}
+
+.buttons button {
+    padding: 12px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: blueviolet;
+    color: #1d1d1d;
+    cursor: pointer;
+}
+
+
+.buttons button:hover {
+    background-color: darkgray;
+}
+
+.mypic img {
+    width: 350px;
+    height: 45vh;
+}
