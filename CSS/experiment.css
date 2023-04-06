@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Fredericka+the+Great&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Fredericka+the+Great&family=Orbitron&family=Source+Code+Pro&display=swap');
 
 * {
     margin: 0px;
@@ -16,7 +16,7 @@ body {
 }
 
 .navigate {
-    background-color: lightseagreen;
+    background-color: blueviolet;
     display: flex;
     justify-content: space-between;
     height: 85px;
@@ -52,7 +52,7 @@ body {
 }
 
 .navigate li:hover {
-    background-color: #1d1d1d;
+    background-color: darkgray;
     border-radius: 25px;
     padding: 5px;
 }
@@ -64,4 +64,29 @@ body {
 
 .navigate li a:hover {
     color: #6b6b6b;
+}
+
+.experiments {
+    color: rgb(255, 255, 255);
+    padding: 48px;
+}
+
+.items {
+    margin: 20px;
+}
+
+button {
+    padding: 6px 10px;
+    border-radius: 18px;
+    font-size: 13px;
+    font-weight: 600;
+    background-color: blueviolet;
+    color: #1d1d1d;
+    cursor: pointer;
+    margin: 8px 0 0 8px;
+}
+
+
+button:hover {
+    background-color: darkgray;
 }
