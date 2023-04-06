@@ -68,22 +68,25 @@ body {
 
 .experiments {
     color: rgb(255, 255, 255);
-    padding: 48px;
+    padding: 45px;
+    margin: 0 300px 0 200px;
 }
 
 .items {
     margin: 20px;
+    display: flex;
+    flex-direction: row;
 }
 
 button {
-    padding: 6px 10px;
-    border-radius: 18px;
-    font-size: 13px;
+    padding: 6px 20px;
+    border-radius: 25px;
+    font-size: 15px;
     font-weight: 600;
     background-color: blueviolet;
     color: #1d1d1d;
     cursor: pointer;
-    margin: 8px 0 0 8px;
+    margin: 0px 0px 18px -325px
 }
 
 
