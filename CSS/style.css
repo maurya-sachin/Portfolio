@@ -110,6 +110,21 @@ body {
     font-size: 16px;
 }
 
+.aboutme a{
+    color: #1d1d1d;
+    text-decoration: underline;
+}
+
+h4{
+    font-weight: 300;
+    font-size: 14px;
+}
+
+h4 img {
+    margin-top: 5px;
+    height: 18px; 
+    width: 16px;
+}
 button {
     margin: 30px 12px 0 0;
 }
