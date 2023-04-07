@@ -80,6 +80,7 @@ body {
 .box{
     background-color:rgba(29,29,29,0.4);
     margin: 35px 150px;
+    padding:10px;
 }
 
 h2{
