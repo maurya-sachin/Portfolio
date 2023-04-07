@@ -80,7 +80,7 @@ body {
     color: rgb(255, 255, 255);
     height: 45vh;
     width: 65vw;
-    margin: 90px auto;
+    margin: 16vmin 42vh;
     display: flex;
     justify-content: space-around;
 }
@@ -98,7 +98,7 @@ body {
 .name {
     font-family: 'Fredericka the Great', cursive;
     font-size: 52px;
-    color: rgb(255, 255, 255)
+    color: #1d1d1d
 }
 
 .about {
