@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Fredericka+the+Great&family=Orbitron&family=Source+Code+Pro&display=swap');
 
+html{
+    background: #ffd89b;
+    background: -webkit-linear-gradient(to top, #19547b, #ffd89b);
+    background: linear-gradient(to top, #19547b, #ffd89b);
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -9,8 +15,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: rgb(138,43,226);
-    background: linear-gradient(229deg, rgba(138,43,226,1) 0%, rgba(29,29,29,1) 35%, rgba(169,169,169,1) 100%);
     font-family: 'Source Code Pro', monospace;
 }
 
@@ -21,15 +25,15 @@ body {
 }
 
 .navigate {
-    background: rgb(138,43,226);
-    background: linear-gradient(349deg, rgba(138,43,226,1) 0%, rgba(29,29,29,1) 35%, rgba(169,169,169,1) 100%);
     display: flex;
     justify-content: space-between;
     height: 13vh;
 }
 
 .navigate #logo {
-    background-color: #a9a9a9;
+    background: #ffd89b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #19547b, #ffd89b);
+    background: linear-gradient(to top, #19547b, #ffd89b);
     font-size: 46px;
     font-weight: 500;
     margin: 12px 0 10px 60px;
@@ -44,10 +48,6 @@ body {
     color: rgb(255, 255, 255);
 }
 
-.navigate #logo:hover {
-    background-color: #6b6b6b;
-}
-
 .navigate ul {
     list-style: none;
     display: flex;
@@ -55,12 +55,6 @@ body {
     gap: 35px;
     font-size: 18px;
     margin: 30px 60px 30px 20px;
-}
-
-.navigate li:hover {
-    background-color: darkgray;
-    border-radius: 25px;
-    padding: 5px;
 }
 
 .navigate li a {
@@ -77,34 +71,37 @@ body {
     color: rgb(255, 255, 255);
 }
 
-.box{
-    background-color:rgba(29,29,29,0.4);
+.box {
+    background-color: rgba(29, 29, 29, 0.4);
+    border-radius: 25px;
     margin: 35px 150px;
-    padding:10px;
+    padding: 10px;
 }
 
-h2{
-    color:#1d1d1d;
-    margin: 5px;
+h2 {
+    color: #1d1d1d;
+    margin: 10px;
     font-weight: 600;
 }
 
-p{
+p {
     margin: 10px;
-    padding: 5px;
+    padding: 10px;
 }
 
-.myskills{
-    margin: 1rem 33rem 2rem 3rem;
+.myskills {
+    margin: 1rem 10rem 2rem 3rem;
+    font-weight: 600;
+    color:rgb(255, 255, 255);
 }
 
-.myskills span{
+.myskills span {
     font-size: 18px;
     margin-bottom: 7px;
     display: block;
 }
 
-.myskills footer{
+.myskills footer {
     background-color: #1d1d1d;
     height: 2px;
 }
@@ -115,8 +112,6 @@ p{
 }
 
 .social {
-    background: rgb(138,43,226);
-    background: linear-gradient(352deg, rgba(138,43,226,1) 0%, rgba(29,29,29,1) 35%, rgba(169,169,169,1) 100%);
     display: flex;
     justify-content: center;
     height: 10vh;
@@ -126,12 +121,12 @@ p{
 .social ul {
     list-style: none;
     display: flex;
-    gap: 35px;
+    gap: 30px;
     margin: auto;
 }
 
 .social ul img {
-    width: 30px;
-    height: 30px;
+    width: 23px;
+    height: 21px;
     display: block;
 }
