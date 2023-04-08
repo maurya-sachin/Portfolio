@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Fredericka+the+Great&family=Orbitron&family=Source+Code+Pro&display=swap');
 
+html{
+    background: #ffd89b;
+    background: -webkit-linear-gradient(to top, #19547b, #ffd89b);
+    background: linear-gradient(to top, #19547b, #ffd89b);
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -9,8 +15,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: rgb(138,43,226);
-    background: linear-gradient(229deg, rgba(138,43,226,1) 0%, rgba(29,29,29,1) 35%, rgba(169,169,169,1) 100%);
     font-family: 'Source Code Pro', monospace;
 }
 
@@ -21,15 +25,15 @@ body {
 }
 
 .navigate {
-    background: rgb(138,43,226);
-    background: linear-gradient(349deg, rgba(138,43,226,1) 0%, rgba(29,29,29,1) 35%, rgba(169,169,169,1) 100%);
     display: flex;
     justify-content: space-between;
     height: 13vh;
 }
 
 .navigate #logo {
-    background-color: #a9a9a9;
+    background: #ffd89b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #19547b, #ffd89b);
+    background: linear-gradient(to top, #19547b, #ffd89b);
     font-size: 46px;
     font-weight: 500;
     margin: 12px 0 10px 60px;
@@ -44,10 +48,6 @@ body {
     color: rgb(255, 255, 255);
 }
 
-.navigate #logo:hover {
-    background-color: #6b6b6b;
-}
-
 .navigate ul {
     list-style: none;
     display: flex;
@@ -55,12 +55,6 @@ body {
     gap: 35px;
     font-size: 18px;
     margin: 30px 60px 30px 20px;
-}
-
-.navigate li:hover {
-    background-color: darkgray;
-    border-radius: 25px;
-    padding: 5px;
 }
 
 .navigate li a {
@@ -74,11 +68,14 @@ body {
 
 .intro {
     height: 77vh;
+    color: rgb(255, 255, 255);
 }
 
-.experiments {
-    color: rgb(255, 255, 255);
-    margin: 80px 150px;
+.box {
+    background-color: rgba(29, 29, 29, 0.4);
+    border-radius: 20px;
+    margin: 35px 150px;
+    padding: 10px;
 }
 
 .items {
@@ -87,12 +84,16 @@ body {
     flex-direction: row;
 }
 
+h1, h2 {
+    color: #1d1d1d;
+}
+
 button {
     padding: 6px 20px;
     border-radius: 25px;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
-    background-color: blueviolet;
+    background-color: khaki;
     color: #1d1d1d;
     cursor: pointer;
     margin: 0px 0px 18px -325px
@@ -100,12 +101,10 @@ button {
 
 
 button:hover {
-    background-color: darkgray;
+    background-color: chocolate;
 }
 
 .social {
-    background: rgb(138,43,226);
-    background: linear-gradient(352deg, rgba(138,43,226,1) 0%, rgba(29,29,29,1) 35%, rgba(169,169,169,1) 100%);
     display: flex;
     justify-content: center;
     height: 10vh;
@@ -115,12 +114,12 @@ button:hover {
 .social ul {
     list-style: none;
     display: flex;
-    gap: 35px;
+    gap: 30px;
     margin: auto;
 }
 
 .social ul img {
-    width: 30px;
-    height: 30px;
+    width: 23px;
+    height: 21px;
     display: block;
 }
