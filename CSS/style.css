@@ -25,7 +25,6 @@ body {
 }
 
 .navigate {
-    background-blend-mode: multiply,multiply;
     display: flex;
     justify-content: space-between;
     height: 13vh;
