@@ -88,6 +88,10 @@ h1, h2 {
     color: #1d1d1d;
 }
 
+p{
+    padding-top: 10px;
+}
+
 button {
     padding: 6px 20px;
     border-radius: 25px;
@@ -96,7 +100,7 @@ button {
     background-color: khaki;
     color: #1d1d1d;
     cursor: pointer;
-    margin: 0px 0px 18px -325px
+    margin: 0px 0px 29px -325px
 }
 
 

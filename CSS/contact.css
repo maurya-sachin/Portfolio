@@ -82,11 +82,18 @@ body {
     text-align: center;
 }
 
-.contactform form {
-    margin: 10px 270px 15px 270px;
+.box {
+    display: flex;
+    justify-content: center;
     background-color: rgba(29, 29, 29, 0.4);
-    padding: 15px 310px 50px 310px;
     border-radius: 25px;
+    margin: 35px 250px;
+    padding: 10px;
+}
+
+.contactform form {
+    display: grid;
+
 }
 
 .contactform form .form-group {
@@ -120,10 +127,10 @@ button {
     border-radius: 25px;
     font-size: 12px;
     font-weight: 600;
-    background-color:khaki;
+    background-color: khaki;
     color: #1d1d1d;
     cursor: pointer;
-    margin: 15px 0 0 150px;
+    margin: 2px 150px;
 }
 
 
