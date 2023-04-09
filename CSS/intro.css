@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Fredericka+the+Great&family=Orbitron&family=Source+Code+Pro&display=swap');
 
-html{
+html {
     background: #ffd89b;
     background: -webkit-linear-gradient(to top, #19547b, #ffd89b);
     background: linear-gradient(to top, #19547b, #ffd89b);
@@ -31,7 +31,7 @@ body {
 }
 
 .navigate #logo {
-    background: #ffd89b;  /* fallback for old browsers */
+    background: #ffd89b;
     background: -webkit-linear-gradient(to top, #19547b, #ffd89b);
     background: linear-gradient(to top, #19547b, #ffd89b);
     font-size: 46px;
@@ -59,7 +59,7 @@ body {
 
 .navigate li a {
     text-decoration: none;
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 }
 
 .navigate li a:hover {
@@ -72,41 +72,48 @@ body {
 }
 
 .box {
+    display: flex;
+    flex-direction: row-reverse;
     background-color: rgba(29, 29, 29, 0.4);
     border-radius: 25px;
     margin: 35px 150px;
     padding: 10px;
 }
 
-h2 {
-    color: #1d1d1d;
-    margin: 10px;
-    font-weight: 600;
-}
-
-p {
-    margin: 10px;
+.about,
+.myskills {
+    margin: 20px;
     padding: 10px;
 }
 
-.myskills {
-    margin: 1rem 10rem 2rem 3rem;
-    font-weight: 600;
-    color:rgb(255, 255, 255);
+.about p {
+    padding: 10px;
+    margin-top: 20px;
+    margin-right: 90px;
 }
 
-.myskills span {
+h2 {
+    color: #1d1d1d;
+}
+
+.skills {
+    margin: 20px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.skills span {
     font-size: 18px;
     margin-bottom: 7px;
     display: block;
 }
 
-.myskills footer {
+.skills footer {
     background-color: #1d1d1d;
     height: 2px;
 }
 
-.myskills footer div {
+.skills footer div {
     width: 0;
     height: 100%;
 }
