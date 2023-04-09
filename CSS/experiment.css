@@ -72,10 +72,11 @@ body {
 }
 
 .box {
+    display: flex;
     background-color: rgba(29, 29, 29, 0.4);
-    border-radius: 20px;
-    margin: 35px 150px;
-    padding: 10px;
+    border-radius: 25px;
+    margin: 35px 90px;
+    padding: 30px;
 }
 
 .items {
