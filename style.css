@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -52,7 +53,7 @@ nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #c31432; 
+    background: #c31432;
     background: -webkit-linear-gradient(to right, #240b36, #c31432);
     background: linear-gradient(to right, #240b36, #c31432);
     position: absolute;
@@ -99,29 +100,29 @@ nav ul li a:hover::after {
 .aboutme {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
 }
 
-.pic{
+.pic {
     flex-basis: 35%;
 }
 
-.pic img{
+.pic img {
     width: 100%;
     border-radius: 15px;
 }
 
-.me{
+.me {
     flex-basis: 60%;
 }
 
-.sub-title{
+.sub-title {
     font-size: 60px;
     font-weight: 600;
     color: #040000;
 }
 
-.sub-title span{
+.sub-title span {
     color: #c31432;
 }
 
@@ -130,7 +131,7 @@ nav ul li a:hover::after {
     margin: 20px 0 40px;
 }
 
-.sub-links{
+.sub-links {
     margin-right: 50px;
     font-size: 18px;
     font-weight: 500;
@@ -138,7 +139,7 @@ nav ul li a:hover::after {
     position: relative;
 }
 
-.sub-links::after{
+.sub-links::after {
     content: '';
     width: 0;
     height: 3px;
@@ -151,64 +152,64 @@ nav ul li a:hover::after {
     transition: 500ms;
 }
 
-.sub-links.active-link::after{
+.sub-links.active-link::after {
     width: 50%;
 }
 
-.sub-contents ul li{
+.sub-contents ul li {
     list-style: none;
     margin: 10px 0;
 }
 
-.sub-contents ul li span{
+.sub-contents ul li span {
     color: #c31432;
     font-size: 14px;
 }
 
-.sub-contents{
+.sub-contents {
     display: none;
 }
 
-.sub-contents.active-content{
+.sub-contents.active-content {
     display: block;
 }
 
 /* Blogs */
 
-#blogs{
+#blogs {
     padding: 30px 0;
 }
 
-.blog-list{
+.blog-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    grid-gap:40px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
     margin-top: 50px;
 }
 
-.blog-list div{
+.blog-list div {
     background: #757F9A;
-background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #D7DDE8, #757F9A);
+    background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);
+    background: linear-gradient(to right, #D7DDE8, #757F9A);
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
     border-radius: 10px;
 }
 
-.blog-list div i{
+.blog-list div i {
     font-size: 50px;
     margin-bottom: 30px;
     transition: background 0.5s, transform 0.5s;
 }
 
-.blog-list div h2{
+.blog-list div h2 {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
 }
 
-.blog-list div a{
+.blog-list div a {
     text-decoration: none;
     color: #040000;
     font-size: 12px;
@@ -216,7 +217,7 @@ background: linear-gradient(to right, #D7DDE8, #757F9A);
     display: inline-block;
 }
 
-.blog-list div:hover{
+.blog-list div:hover {
     background: #c31432;
     background: -webkit-linear-gradient(to right, #240b36, #c31432);
     background: linear-gradient(to right, #240b36, #c31432);
@@ -227,7 +228,35 @@ background: linear-gradient(to right, #D7DDE8, #757F9A);
 
 /* Portfolio */
 
-#portfolio{
+#portfolio {
     padding: 50px 0;
 
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.layer {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: #c31432;
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);
+    background: linear-gradient(to right, #240b36, #c31432);
 }
