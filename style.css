@@ -211,7 +211,7 @@ nav ul li a:hover::after {
 
 .blog-list div a {
     text-decoration: none;
-    color: #040000;
+    color: #fff;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
@@ -250,13 +250,70 @@ nav ul li a:hover::after {
     width: 100%;
     border-radius: 10px;
     display: block;
+    transition: transform 0.5s;
 }
 
 .layer {
     width: 100%;
-    height: 100%;
+    height: 0;
+    color: #fff;
     border-radius: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #c31432);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: #c31432;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #040000;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img{
+    transform:scale(1.1);
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #c31432;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #040000;
+    transition: background 0.5s;
+}
+
+.btn:hover{
     background: #c31432;
     background: -webkit-linear-gradient(to right, #240b36, #c31432);
     background: linear-gradient(to right, #240b36, #c31432);
+    color: #fff;
 }
