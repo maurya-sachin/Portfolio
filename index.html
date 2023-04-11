@@ -9,22 +9,25 @@
     <link rel="icon" sizes="72x72" href="img/logoS.png" /><!-- title bar icon -->
     <title>Sachin Maurya - Personal Portfolio</title><!-- title -->
     <link rel="stylesheet" href="style.css"><!-- stylesheet  -->
-    <script src="https://kit.fontawesome.com/0b2fbd0f3f.js" crossorigin="anonymous"></script><!-- icon pack from fontawesome.com-->
+    <script src="https://kit.fontawesome.com/0b2fbd0f3f.js" crossorigin="anonymous"></script>
+    <!-- icon pack from fontawesome.com-->
 </head>
 
 <body>
-    <!-- Homepage -->
+    <!------------------------ Homepage ----------------------->
     <div id="homepage">
-        <div class="container"> 
+        <div class="container">
             <nav>
                 <img src="/img/logo.png" class="logo">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Blogs</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
+                    <i class="fa-sharp fa-solid fa-square-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="intro">
                 <p>Front-End Developer</p>
@@ -37,7 +40,7 @@
         </div>
     </div>
 
-    <!-- About page starts here -->
+    <!----------------------- About page starts here ----------------------->
 
     <div id="about">
         <div class="container">
@@ -79,7 +82,7 @@
         </div>
     </div>
 
-    <!-- Blogs -->
+    <!----------------------- Blogs ----------------------->
 
     <div id="blogs">
         <div class="container">
@@ -88,26 +91,31 @@
                 <div>
                     <i class="fa-brands fa-html5"></i>
                     <h2>title</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eveniet sapiente enim, eos earum veritatis error, repudiandae at molestiae</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eveniet sapiente enim, eos earum
+                        veritatis error, repudiandae at molestiae</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-brands fa-css3-alt"></i>
                     <h2>title</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eveniet sapiente enim, eos earum veritatis error, repudiandae at molestiae</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eveniet sapiente enim, eos earum
+                        veritatis error, repudiandae at molestiae</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-brands fa-dev"></i>
                     <h2>title</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eveniet sapiente enim, eos earum veritatis error, repudiandae at molestiae</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eveniet sapiente enim, eos earum
+                        veritatis error, repudiandae at molestiae</p>
                     <a href="#">Learn more</a>
                 </div>
 
             </div>
         </div>
     </div>
-    <!-- Portfolio -->
+
+    <!----------------------- Portfolio ----------------------->
+
     <div id="portfolio">
         <div class="container">
             <h1 class="sub-title">My Work</h1>
@@ -116,7 +124,8 @@
                     <img src="img/work-1.png">
                     <div class="layer">
                         <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis dolores animi alias perferendis sequi pariatur?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis dolores animi alias
+                            perferendis sequi pariatur?</p>
                         <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
@@ -124,15 +133,18 @@
                     <img src="img/work-2.png">
                     <div class="layer">
                         <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis dolores animi alias perferendis sequi pariatur?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis dolores animi alias
+                            perferendis sequi pariatur?</p>
                         <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
+
                 <div class="work">
                     <img src="img/work-3.png">
                     <div class="layer">
                         <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis dolores animi alias perferendis sequi pariatur?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis dolores animi alias
+                            perferendis sequi pariatur?</p>
                         <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
@@ -140,22 +152,65 @@
             <a href="#" class="btn">See more</a>
         </div>
     </div>
-<script>
 
-    var sublinks = document.getElementsByClassName("sub-links");
-    var subcontents = document.getElementsByClassName("sub-contents");
+    <!----------------------- Contact ----------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> sachinmaurya1710@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 8586025785</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/maurya-sachin"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/maurya-sachin"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://codepen.io/maurya-sachin"><i class="fa-brands fa-codepen"></i></a>
+                        <a href="https://dev.to/mauryasachin"><i class="fa-brands fa-dev"></i></a>
+                    </div>
+                    <a href="Sachinmaurya.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-solid fa-copyright"></i> Sachin</p>
+        </div>
+    </div>
+    <script>
 
-    function opentab(tabname){
-        for(sublink of sublinks){
-            sublink.classList.remove("active-link");
+        var sublinks = document.getElementsByClassName("sub-links");
+        var subcontents = document.getElementsByClassName("sub-contents");
+
+        function opentab(tabname) {
+            for (sublink of sublinks) {
+                sublink.classList.remove("active-link");
+            }
+            for (subcontent of subcontents) {
+                subcontent.classList.remove("active-content");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-content");
         }
-        for(subcontent of subcontents){
-            subcontent.classList.remove("active-content");
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
         }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-content");
-    }
-</script>
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
 </body>
 
 </html>
