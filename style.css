@@ -430,9 +430,10 @@ nav .fa-solid {
     .intro h1 {
         font-size: 30px;
     }
+
     nav .fa-solid {
         display: block;
-        font-size: 25px;   
+        font-size: 25px;
     }
 
     nav ul {
@@ -448,7 +449,7 @@ nav .fa-solid {
         transition: right 0.5s;
     }
 
-    nav ul li{
+    nav ul li {
         display: block;
         margin: 25px;
     }
@@ -457,24 +458,39 @@ nav .fa-solid {
         color: #fff;
     }
 
-    nav ul .fa-solid{
+    nav ul .fa-solid {
         position: absolute;
         top: 25px;
         left: 25px;
         cursor: pointer;
     }
-    .sub-title{
+
+    .sub-title {
         font-size: 40px;
     }
 
-    .pic, .me{
+    .pic,
+    .me {
         flex-basis: 100%;
     }
 
-    .pic{
+    .pic {
         margin-bottom: 30px;
     }
-    .me{
+
+    .me {
+        font-size: 14px;
+    }
+
+    .sub-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
         font-size: 14px;
     }
 }
