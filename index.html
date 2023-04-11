@@ -20,11 +20,11 @@
             <nav>
                 <img src="./img/logo.png" class="logo">
                 <ul id="sidemenu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blogs</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#homepage">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <i class="fa-sharp fa-solid fa-square-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -170,12 +170,13 @@
                     <a href="Sachinmaurya.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
-                    </form>
+                    </form> 
+                    
                 </div>
             </div>
         </div>
@@ -208,9 +209,20 @@
         }
 
         function closemenu() {
-            sidemenu.style.right = "-200px";
+            sidemenu.style.right = "-150px";
         }
     </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzwSBycQuVcld01GrNX1E5h5-p16M9PuIN2JtcsrTMba-Qh37OIrpD7SPB8uzDYBUg/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 
 </html>

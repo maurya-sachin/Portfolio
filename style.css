@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background: #8e9eab;
     background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
@@ -427,6 +431,11 @@ nav .fa-solid {
         font-size: 16px;
     }
 
+    .location img {
+        height: 16px;
+        width: 16px;
+    }
+
     .intro h1 {
         font-size: 30px;
     }
@@ -440,8 +449,8 @@ nav .fa-solid {
         background: #c31432;
         position: fixed;
         top: 0;
-        right: -200px;
-        width: 200px;
+        right: -150px;
+        width: 150px;
         height: 100vh;
         padding-top: 50px;
         color: #fff;
@@ -482,15 +491,17 @@ nav .fa-solid {
         font-size: 14px;
     }
 
-    .sub-links{
+    .sub-links {
         font-size: 16px;
         margin-right: 20px;
     }
 
-    .contact-left, .contact-right{
+    .contact-left,
+    .contact-right {
         flex-basis: 100%;
     }
-    .copyright{
+
+    .copyright {
         font-size: 14px;
     }
 }
