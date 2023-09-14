@@ -189,7 +189,7 @@ nav ul li a:hover::after {
 
 /* Blogs */
 
-#blogs {
+/* #blogs {
   padding: 30px 0;
 }
 
@@ -236,7 +236,7 @@ nav ul li a:hover::after {
   background: linear-gradient(to right, #240b36, #c31432);
   transform: translateY(-10px);
   color: #fff;
-}
+} */
 
 /* Portfolio */
 
